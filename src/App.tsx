@@ -1,6 +1,9 @@
+import { GlobalStyle } from './styles/GlobalStyles';
+
 function App() {
   return (
     <>
+      <GlobalStyle />
       <div>
         <h1>Hello, Vite!</h1>
         <img src="https://vitejs.dev/logo.svg" alt="Vite logo" width="100" />

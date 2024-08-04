@@ -11,9 +11,13 @@ module.exports = {
     project: 'tsconfig.json',
     tsconfigRootDir: __dirname,
     sourceType: 'module',
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   plugins: [
     '@typescript-eslint',
+    "styled-components-a11y",
     'react-refresh',
   ],
   extends: [
@@ -21,6 +25,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'plugin:react-hooks/recommended',
+    "plugin:styled-components-a11y/recommended"
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   rules: {
